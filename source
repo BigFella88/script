@@ -1,0 +1,109 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local main = Instance.new("Frame")
+local TextButton = Instance.new("TextButton")
+local TextLabel = Instance.new("TextLabel")
+local TextLabel_2 = Instance.new("TextLabel")
+local TextButton_2 = Instance.new("TextButton")
+local TextButton_3 = Instance.new("TextButton")
+local TextButton_4 = Instance.new("TextButton")
+
+--Properties:
+
+ScreenGui.Parent = game.CoreGui
+
+main.Name = "main"
+main.Parent = ScreenGui
+main.BackgroundColor3 = Color3.fromRGB(36, 37, 37)
+main.BackgroundTransparency = 0.200
+main.Position = UDim2.new(0.184963778, 0, 0.217391342, 0)
+main.Size = UDim2.new(0, 448, 0, 259)
+main.Active = true
+main.Draggable = true
+
+TextButton.Parent = main
+TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.BackgroundTransparency = 0.650
+TextButton.Position = UDim2.new(0.0513392799, 0, 0.254826277, 0)
+TextButton.Size = UDim2.new(0, 200, 0, 50)
+TextButton.Font = Enum.Font.GothamBold
+TextButton.Text = "Remove Helmet"
+TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.TextSize = 25.000
+TextButton.TextWrapped = true
+TextButton.MouseButton1Down:connect(function()
+	spawn(function()
+		workspace.nature_garss.Helmet:Destroy()
+	end)
+
+	spawn(function()
+		workspace.nature_garss.gotHelmet:Destroy()
+	end)
+end)
+
+TextLabel.Parent = main
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 0.950
+TextLabel.Position = UDim2.new(-0.0245535709, 0, 0.806949735, 0)
+TextLabel.Size = UDim2.new(0, 448, 0, 50)
+TextLabel.Font = Enum.Font.GothamBold
+TextLabel.Text = "Made By SpookyKenzz"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextSize = 40.000
+
+TextLabel_2.Parent = main
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 0.900
+TextLabel_2.Size = UDim2.new(0, 450, 0, 50)
+TextLabel_2.Font = Enum.Font.GothamBold
+TextLabel_2.Text = "Sky-God Skid"
+TextLabel_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.TextSize = 56.000
+
+TextButton_2.Parent = main
+TextButton_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_2.BackgroundTransparency = 0.650
+TextButton_2.Position = UDim2.new(0.0513392799, 0, 0.548262596, 0)
+TextButton_2.Size = UDim2.new(0, 200, 0, 50)
+TextButton_2.Font = Enum.Font.GothamBold
+TextButton_2.Text = "Regenerate Helmet"
+TextButton_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_2.TextSize = 22.000
+TextButton_2.TextWrapped = true
+TextButton_2.MouseButton1Down:connect(function()
+	spawn(function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(12, 265, 79)
+	end)
+end)
+
+TextButton_3.Parent = main
+TextButton_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_3.BackgroundTransparency = 0.650
+TextButton_3.Position = UDim2.new(0.529017866, 0, 0.254826277, 0)
+TextButton_3.Size = UDim2.new(0, 200, 0, 50)
+TextButton_3.Font = Enum.Font.GothamBold
+TextButton_3.Text = "Helmet"
+TextButton_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_3.TextSize = 25.000
+TextButton_3.TextWrapped = true
+TextButton_3.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(12, 265, 79)
+end)
+
+TextButton_4.Parent = main
+TextButton_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_4.BackgroundTransparency = 0.650
+TextButton_4.Position = UDim2.new(0.529017866, 0, 0.548262596, 0)
+TextButton_4.Size = UDim2.new(0, 200, 0, 50)
+TextButton_4.Font = Enum.Font.GothamBold
+TextButton_4.Text = "Armor"
+TextButton_4.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_4.TextSize = 25.000
+TextButton_4.TextWrapped = true
+TextButton_4.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-11, 265, 61)
+end)
