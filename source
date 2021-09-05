@@ -37,11 +37,11 @@ TextButton.TextSize = 25.000
 TextButton.TextWrapped = true
 TextButton.MouseButton1Down:connect(function()
 	spawn(function()
-		workspace.UnknownLeMOnsYT.Helmet:Destroy()
+		workspace.Klaser_22r.Helmet:Destroy()
 	end)
 
 	spawn(function()
-		workspace.UnknownLeMOnsYT.gotHelmet:Destroy()
+		workspace.Klaser_22r.gotHelmet:Destroy()
 	end)
 end)
 
